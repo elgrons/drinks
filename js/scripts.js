@@ -19,15 +19,12 @@ window.onload = function() {
     const age = parseInt(document.querySelector("input#age").value);
 
     // we check if the age is greater than 21.
-    if (age >= 21) {
+    if (age > 21) {
       drinkMenu.removeAttribute("class");
-    } 
+    } else if (age === 21) { // new else if statement
+      window.alert("Have some fun, you’re just 21!");
+    } else {
+      under21Message.removeAttribute("class");
+    }
   };
 };
-
-git remote add jm akjdfkasjhdf
-
-git add . 
-
-git commit
-
